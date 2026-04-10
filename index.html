@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Battle Brothers: Web</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* 防止畫面被選取與原生的預設拖曳行為，讓遊戲體驗更好 */
+      body {
+        margin: 0;
+        overflow: hidden;
+        background-color: #171717;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
